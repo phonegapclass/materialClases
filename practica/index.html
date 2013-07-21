@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>jQTouch &beta;</title>
+        <link rel="stylesheet" href="css/vanilla.css" title="jQTouch">
+		<script src="phonegap.js"></script>
+        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/actions.js"></script>
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            div#jqt #about {
+                padding: 100px 10px 40px;
+                text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0;
+                color: #999;
+                font-size: 13px;
+                text-align: center;
+                background: #161618;
+            }
+            div#jqt #about p {
+                margin-bottom: 8px;
+            }
+            div#jqt #about a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="jqt">
+            <div id="about" class="selectable">
+                    <p><strong>Practica 1</strong><br>Versión 1.0<br>
+                        <a href="http://www.cenet.mx">Por Carlos Celma</a></p>
+                    <p><em>API PhoneGap<br>Acelerómetro<br>Brújula</em></p>
+                    <p><br><br><a href="#" class="grayButton goback">Cerrar</a></p>
+            </div>
+            <div id="home" class="current">
+                <div class="toolbar">
+                    <h1>Práctica 1</h1>
+                    <a class="button slideup" id="infoButton" href="#about">Info</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#acelerometro">Acelerómetro <small class="counter">2</small></a> </li>
+                        <li class="arrow"><a href="#brujula">Brujula <small class="counter">2</small></a></li>
+                    </ul>
+                    <div class="info">
+                        <p>Practica de Phonegap <br>Utilizando API.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="acelerometro">
+                <div class="toolbar">
+                    <h1>Acelerómetro</h1>
+                    <a href="#" class="back">Atrás</a>
+                </div>
+                <div class="scroll">
+                	<ul class="individual">
+                        <li><a href="#">Iniciar</a></li>
+                        <li style="background:#900;"><a style="color:#fff;" href="#">Detener</a></li>
+                    </ul>
+                    <h2>Detenido</h2>
+                </div>
+            </div>
+            <div id="brujula">
+                <div class="toolbar">
+                    <h1>Brújula</h1>
+                    <a class="back" href="#">Atrás</a>
+                </div>
+                <div class="scroll">
+                	<ul class="individual">
+                        <li><a href="#">Iniciar</a></li>
+                        <li style="background:#900;"><a style="color:#fff;" href="#">Detener</a></li>
+                    </ul>
+                    <h2>Detenido</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
