@@ -17,191 +17,56 @@ Desarrollaremos la interfaz gráfica para la apliación de un hotel que requiere
 6. Formulario de Registro de Usuario (#registro)
 
 
-What you need to build your own jQuery
+¿Qué necesitamos para Contruir la Interfaz de esta práctica?
 --------------------------------------
 
-In order to build jQuery, you need to have Node.js/npm latest and git 1.7 or later.
-(Earlier versions might work OK, but are not tested.)
+Para la construcción de esta interfaz vamos a utilizar el framework, para interfaces gráficas HTML5, [jQueryMobile](http://www.jquerymobile.com). Para ello requerimos:
 
-For Windows you have to download and install [git](http://git-scm.com/downloads) and [Node.js](http://nodejs.org/download/).
+1. [Abrir](http://code.jquery.com/jquery-1.11.0.min.js) el código fuente de jQuery
+2. Crear un nuevo archivo llamado jquery.js en la carpeta respectiva y pegar el código fuente copiado.
+3. [Descargar](http://jquerymobile.com/resources/download/jquery.mobile-1.4.0.zip) los códigos fuente para utilizar el framework de jQueryMobile
+4. Descomprimir el archivo zip descargado
+5. Copiar el archivo "jquery.mobile-1.4.0.min.css" en la carpeta respectiva
+6. Copiar el archivo "jquery.mobile-1.4.0.min.js" en la carpeta respectiva
+7. Copiar la carpeta "images" junto con el archivo css
 
-Mac OS users should install [Homebrew](http://mxcl.github.com/homebrew/). Once Homebrew is installed, run `brew install git` to install git,
-and `brew install node` to install Node.js.
 
-Linux/BSD users should use their appropriate package managers to install git and Node.js, or build from source
-if you swing that way. Easy-peasy.
-
-
-How to build your own jQuery
+¿Cómo compilar tu aplicación en la nube?
 ----------------------------
 
-First, clone a copy of the main jQuery git repo by running:
+Para poder compilar nuestra aplicación en la nube requerimos:
 
-```bash
-git clone git://github.com/jquery/jquery.git
-```
+1. Crear una cuenta en el sitio de [Github](https://github.com/)
+2. [Descargar](https://help.github.com/articles/set-up-git) e Instalar el programa para la sincronización de archivos y repositorios de Github
+3. Crear una cuenta a través de Github en el sitio de [PhoneGap Build](https://build.phonegap.com/)
 
-Install the [grunt-cli](http://gruntjs.com/getting-started#installing-the-cli) and [bower](http://bower.io/) packages if you haven't before. These should be done as global installs:
+Compilando la aplicación
 
-```bash
-npm install -g grunt-cli bower
-```
-
-Make sure you have `grunt` and `bower` installed by testing:
-
-```bash
-grunt -version
-bower -version
-```
-
-Enter the jquery directory and install the Node and Bower dependencies, this time *without* specifying a global(-g) install:
-
-```bash
-cd jquery && npm install
-```
-
-Then, to get a complete, minified (w/ Uglify.js), linted (w/ JSHint) version of jQuery, type the following:
-
-```bash
-grunt
-```
-
-The built version of jQuery will be put in the `dist/` subdirectory, along with the minified copy and associated map file.
+1. Arrastrar la carpeta hotelCenet al programa de Github
+2. Oprimir el botón de "create" para crear el repositorio
+3. Seleccionar el repositorio creado (Doble Click)
+4. Escribir un "Summary" y dar click en el botón "Commit"
+`Para Windows`
+4.1. Presionar el botón "publish" (arriba a la derecha)
+4.2. Una vez publicado la palabra "publishing..." cambiará por sync
+4.3. Presionar el botón "sync"
+`Para Todos`
+5. Verificar en la página de [Github](https://github.com/) que el repositorio contenga todos nuestros archivos
+6. Entrar al sitio de [PhoneGap Build](https://build.phonegap.com/)
+7. Seleccionar la opción "open-source"
+8. En el combo Seleccionar nuestro repositorio de Github (HotelCenet)
+9. Una vez seleccionado Colocar nombre de la Aplicación y Comentarios
+10. Presionar el botón "Ready to build"
+11. Puede descargarse la aplicación en el dispositivo con el código QR
 
 
-### Modules
+Sitios Visitados en la Sesión
+----------------------------
 
-Special builds can be created that exclude subsets of jQuery functionality.
-This allows for smaller custom builds when the builder is certain that those parts of jQuery are not being used.
-For example, an app that only used JSONP for `$.ajax()` and did not need to calculate offsets or positions of elements could exclude the offset and ajax/xhr modules.
+[www.phonegap.com](http://www.phonegap.com/)
+[www.jquery.com](http://www.jquery.com/)
+[www.jquerymobile.com](http://www.jquerymobile.com/)
+[www.github.com](https://www.github.com/)
+[https://build.phonegap.com](https://build.phonegap.com/)
 
-Any module may be excluded except for `core`, and `selector`. To exclude a module, pass its path relative to the `src` folder (without the `.js` extension).
-
-Some example modules that can be excluded are:
-
-- **ajax**: All AJAX functionality: `$.ajax()`, `$.get()`, `$.post()`, `$.ajaxSetup()`, `.load()`, transports, and ajax event shorthands such as `.ajaxStart()`.
-- **ajax/xhr**: The XMLHTTPRequest AJAX transport only.
-- **ajax/script**: The `<script>` AJAX transport only; used to retrieve scripts.
-- **ajax/jsonp**: The JSONP AJAX transport only; depends on the ajax/script transport.
-- **css**: The `.css()` method plus non-animated `.show()`, `.hide()` and `.toggle()`. Also removes **all** modules depending on css (including **effects**, **dimensions**, and **offset**).
-- **deprecated**: Methods documented as deprecated but not yet removed; currently only `.andSelf()`.
-- **dimensions**: The `.width()` and `.height()` methods, including `inner-` and `outer-` variations.
-- **effects**: The `.animate()` method and its shorthands such as `.slideUp()` or `.hide("slow")`.
-- **event**: The `.on()` and `.off()` methods and all event functionality. Also removes `event/alias`.
-- **event/alias**: All event attaching/triggering shorthands like `.click()` or `.mouseover()`.
-- **offset**: The `.offset()`, `.position()`, `.offsetParent()`, `.scrollLeft()`, and `.scrollTop()` methods.
-- **wrap**: The `.wrap()`, `.wrapAll()`, `.wrapInner()`, and `.unwrap()` methods.
-- **exports/amd**: Exclude the AMD definition.
-- **core/ready**: Exclude the ready module if you place your scripts at the end of the body. Any ready callbacks bound with `jQuery()` will simply be called immediately. However, `jQuery(document).ready()` will not be a function and `.on("ready", ...)` or similar will not be triggered.
-- **deferred**: Exclude jQuery.Deferred. This also removes jQuery.Callbacks. *Note* that modules that depend on jQuery.Deferred(AJAX, effects, core/ready) will not be removed and will still expect jQuery.Deferred to be there. Include your own jQuery.Deferred implementation or exclude those modules as well (`grunt custom:-deferred,-ajax,-effects,-core/ready`).
-- **support**: Excluding the support module is not recommended, but possible. It's your responsibility to either remove modules that use jQuery.support (many of them) or replace the values wherever jQuery.support is used. This is mainly only useful when building a barebones version of jQuery.
-
-As a special case, you may also replace Sizzle by using a special flag `grunt custom:-sizzle`.
-
-- **sizzle**: The Sizzle selector engine. When this module is excluded, it is replaced by a rudimentary selector engine based on the browser's `querySelectorAll` method that does not support jQuery selector extensions or enhanced semantics. See the selector-native.js file for details.
-
-*Note*: Excluding Sizzle will also exclude all jQuery selector extensions (such as `effects/animated-selector` and `css/hidden-visible-selectors`).
-
-The build process shows a message for each dependent module it excludes or includes.
-
-To create a custom build of the latest stable version, first check out the version:
-
-```bash
-git pull; git checkout $(git describe --abbrev=0 --tags)
-```
-
-Then, make sure all Node dependencies are installed:
-
-```bash
-npm install
-```
-
-Create the custom build, use the `grunt custom` option, listing the modules to be excluded. Examples:
-
-Exclude all **ajax** functionality:
-
-```bash
-grunt custom:-ajax
-```
-
-Excluding **css** removes modules depending on CSS: **effects**, **offset**, **dimensions**.
-
-```bash
-grunt custom:-css
-```
-
-Exclude a bunch of modules:
-
-```bash
-grunt custom:-ajax,-css,-deprecated,-dimensions,-effects,-event/alias,-offset,-wrap
-```
-
-For questions or requests regarding custom builds, please start a thread on the [Developing jQuery Core](https://forum.jquery.com/developing-jquery-core) section of the forum. Due to the combinatorics and custom nature of these builds, they are not regularly tested in jQuery's unit test process. The non-Sizzle selector engine currently does not pass unit tests because it is missing too much essential functionality.
-
-Running the Unit Tests
---------------------------------------
-
-Make sure you have the necessary dependencies:
-
-```bash
-bower install
-```
-
-Start `grunt watch` to auto-build jQuery as you work:
-
-```bash
-cd jquery && grunt watch
-```
-
-
-Run the unit tests with a local server that supports PHP. Ensure that you run the site from the root directory, not the "test" directory. No database is required. Pre-configured php local servers are available for Windows and Mac. Here are some options:
-
-- Windows: [WAMP download](http://www.wampserver.com/en/)
-- Mac: [MAMP download](http://www.mamp.info/en/index.html)
-- Linux: [Setting up LAMP](https://www.linux.com/learn/tutorials/288158-easy-lamp-server-installation)
-- [Mongoose (most platforms)](http://code.google.com/p/mongoose/)
-
-
-
-
-Building to a different directory
----------------------------------
-
-To copy the built jQuery files from `/dist` to another directory:
-
-```bash
-grunt && grunt dist:/path/to/special/location/
-```
-With this example, the output files would be:
-
-```bash
-/path/to/special/location/jquery.js
-/path/to/special/location/jquery.min.js
-```
-
-To add a permanent copy destination, create a file in `dist/` called ".destination.json". Inside the file, paste and customize the following:
-
-```json
-
-{
-  "/Absolute/path/to/other/destination": true
-}
-```
-
-Additionally, both methods can be combined.
-
-
-
-Essential Git
--------------
-
-As the source code is handled by the version control system Git, it's useful to know some features used.
-
-### cleaning ###
-
-If you want to purge your working directory back to the status of upstream, following commands can be used (remember everything you've worked on is gone after these):
-
-```bash
-git reset --hard upstream/master
-git clean -fdx
-```
+`Por: Carlos Celma Tavera`
