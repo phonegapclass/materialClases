@@ -1,14 +1,20 @@
-[Sesión 1](http://www.igitsoft.com/) - Introducción al Desarrollo
+[Sesión 1](http://www.igitsoft.com/) - Interfaces Gráficas
 ==================================================
 
-Contribution Guides
+Para la creación de interfaces gráficas utilizaremos HTML 5, CSS 3 y JavaScript.
+
+Practica de Hotel CENET
 --------------------------------------
 
-In the spirit of open source software development, jQuery always encourages community code contribution. To help you get started and before you jump into writing code, be sure to read these important contribution guidelines thoroughly:
+Desarrollaremos la interfaz gráfica para la apliación de un hotel que requiere que sus reservaciones sean realizadas desde el dispositivo móvil de sus usuarios. Las pantallas requeridas para esta aplicación serán:
 
-1. [Getting Involved](http://docs.jquery.com/Getting_Involved)
-2. [Core Style Guide](http://docs.jquery.com/JQuery_Core_Style_Guidelines)
-3. [Tips For Bug Patching](http://docs.jquery.com/Tips_for_jQuery_Bug_Patching)
+1. Menú Principal (#home)
+2. Información de Privacidad (#priv)
+3. Información sobre el Hotel (#nosotro)
+3. Historial de Reservaciones (#historial)
+4. Solicitud de Reservaciones (#nr1)
+5. Formulario de Reservaciones (#nr2)
+6. Formulario de Registro de Usuario (#registro)
 
 
 What you need to build your own jQuery
