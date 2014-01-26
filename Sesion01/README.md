@@ -63,10 +63,10 @@ Compilando la aplicación
 Sitios Visitados en la Sesión
 ----------------------------
 
-[www.phonegap.com](http://www.phonegap.com/)
-[www.jquery.com](http://www.jquery.com/)
-[www.jquerymobile.com](http://www.jquerymobile.com/)
-[www.github.com](https://www.github.com/)
-[https://build.phonegap.com](https://build.phonegap.com/)
+- [www.phonegap.com](http://www.phonegap.com/)
+- [www.jquery.com](http://www.jquery.com/)
+- [www.jquerymobile.com](http://www.jquerymobile.com/)
+- [www.github.com](https://www.github.com/)
+- [https://build.phonegap.com](https://build.phonegap.com/)
 
 `Por: Carlos Celma Tavera`
