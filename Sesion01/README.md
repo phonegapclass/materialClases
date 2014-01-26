@@ -48,11 +48,13 @@ Compilando la aplicación
 4. Escribir un "Summary" y dar click en el botón "Commit"
 
 `Para Windows`
-- 4.1 Presionar el botón "publish" (arriba a la derecha)
-- 4.2. Una vez publicado la palabra "publishing..." cambiará por sync
-- 4.3. Presionar el botón "sync"
+
+4.1. Presionar el botón "publish" (arriba a la derecha)
+4.2. Una vez publicado la palabra "publishing..." cambiará por sync
+4.3. Presionar el botón "sync"
 
 `Para Todos`
+
 5. Verificar en la página de [Github](https://github.com/) que el repositorio contenga todos nuestros archivos
 6. Entrar al sitio de [PhoneGap Build](https://build.phonegap.com/)
 7. Seleccionar la opción "open-source"
