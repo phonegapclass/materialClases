@@ -49,9 +49,9 @@ Compilando la aplicación
 
 `Para Windows`
 
-4.1. Presionar el botón "publish" (arriba a la derecha)
-4.2. Una vez publicado la palabra "publishing..." cambiará por sync
-4.3. Presionar el botón "sync"
+- 4.1. Presionar el botón "publish" (arriba a la derecha)
+- 4.2. Una vez publicado la palabra "publishing..." cambiará por sync
+- 4.3. Presionar el botón "sync"
 
 `Para Todos`
 
