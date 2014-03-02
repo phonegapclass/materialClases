@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0A490BED-951B-4B11-AC21-28EE1CBF7084</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GEO APP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A4C0BEB7-EDBE-49EE-9DD4-83B02EC0D658</key>
+		<string>https://github.com/phonegapclass/materialClases.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Sesion06/geoApp/platforms/ios/GEO APP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A4C0BEB7-EDBE-49EE-9DD4-83B02EC0D658</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/phonegapclass/materialClases.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A4C0BEB7-EDBE-49EE-9DD4-83B02EC0D658</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A4C0BEB7-EDBE-49EE-9DD4-83B02EC0D658</string>
+			<key>IDESourceControlWCCName</key>
+			<string>materialClases</string>
+		</dict>
+	</array>
+</dict>
+</plist>
