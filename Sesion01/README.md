@@ -22,12 +22,12 @@ Desarrollaremos la interfaz gráfica para la apliación de un hotel que requiere
 
 Para la construcción de esta interfaz vamos a utilizar el framework, para interfaces gráficas HTML5, [jQueryMobile](http://www.jquerymobile.com). Para ello requerimos:
 
-1. [Abrir](http://code.jquery.com/jquery-1.11.0.min.js) el código fuente de jQuery
-2. Crear un nuevo archivo llamado jquery.js en la carpeta respectiva y pegar el código fuente copiado.
+1. [Descargar](http://code.jquery.com/jquery-1.11.1.min.js) el código fuente de jQuery
+2. Copiar el archivo llamado jquery-1.11.1.min.js en la carpeta respectiva y pegar el código fuente copiado.
 3. [Descargar](http://jquerymobile.com/resources/download/jquery.mobile-1.4.0.zip) los códigos fuente para utilizar el framework de jQueryMobile
 4. Descomprimir el archivo zip descargado
-5. Copiar el archivo "jquery.mobile-1.4.0.min.css" en la carpeta respectiva
-6. Copiar el archivo "jquery.mobile-1.4.0.min.js" en la carpeta respectiva
+5. Copiar el archivo "jquery.mobile-1.4.4.min.css" en la carpeta respectiva
+6. Copiar el archivo "jquery.mobile-1.4.4.min.js" en la carpeta respectiva
 7. Copiar la carpeta "images" junto con el archivo css
 
 
