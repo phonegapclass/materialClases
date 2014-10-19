@@ -8,6 +8,7 @@ Temas por ver
 
 - Eventos en Phonegap
 - API dialogs de Phonegap
+- API device de Phonegap
 - Conexión a un servidor externo
 
 
