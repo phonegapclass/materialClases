@@ -3,6 +3,11 @@
 
 Para la creación de interfaces gráficas utilizaremos HTML 5, CSS 3 y JavaScript.
 
+Temas por ver
+--------------------------------------
+
+- Desarrollo de la interfaz Gráfica de Usuario
+
 Practica de Hotel CENET
 --------------------------------------
 

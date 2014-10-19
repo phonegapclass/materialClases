@@ -10,7 +10,10 @@
 			else
 				echo 0;
 		}else{
-			echo 'Error 404: Not Found';
+			if(isset($_POST['tipo']))
+				echo 1;
+			else
+				echo 'Error 404: Not Found';
 		}
 	}
 ?>
