@@ -29,7 +29,7 @@ Para la construcción de esta interfaz vamos a utilizar el framework, para inter
 
 1. [Descargar](http://code.jquery.com/jquery-1.11.1.min.js) el código fuente de jQuery
 2. Copiar el archivo llamado jquery-1.11.1.min.js en la carpeta respectiva y pegar el código fuente copiado.
-3. [Descargar](http://jquerymobile.com/resources/download/jquery.mobile-1.4.0.zip) los códigos fuente para utilizar el framework de jQueryMobile
+3. [Descargar](http://jquerymobile.com/resources/download/jquery.mobile-1.4.4.zip) los códigos fuente para utilizar el framework de jQueryMobile
 4. Descomprimir el archivo zip descargado
 5. Copiar el archivo "jquery.mobile-1.4.4.min.css" en la carpeta respectiva
 6. Copiar el archivo "jquery.mobile-1.4.4.min.js" en la carpeta respectiva
