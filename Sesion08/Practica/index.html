@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>jQTouch &beta;</title>
+        <link rel="stylesheet" href="css/vanilla.css" title="jQTouch">
+		<script src="phonegap.js"></script>
+        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/archivos.js"></script>
+        <script src="js/contactos.js"></script>
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            div#jqt #about {
+                padding: 100px 10px 40px;
+                text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0;
+                color: #999;
+                font-size: 13px;
+                text-align: center;
+                background: #161618;
+            }
+            div#jqt #about p {
+                margin-bottom: 8px;
+            }
+            div#jqt #about a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="jqt">
+            <div id="about" class="selectable">
+                    <p><strong>Práctica 8</strong><br>Versión 1.0<br>
+                        <a href="http://www.cenet.mx">Por Carlos Celma</a></p>
+                    <p><em>API PhoneGap<br>Archivos<br>Contactos</em></p>
+                    <p><br><br><a href="#" class="grayButton goback">Cerrar</a></p>
+            </div>
+            <div id="home" class="current">
+                <div class="toolbar">
+                    <h1>Práctica 8</h1>
+                    <a class="button slideup" id="infoButton" href="#about">Info</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#archivos">Archivos <small class="counter">2</small></a> </li>
+                        <li class="arrow"><a href="#contactos">Contactos <small class="counter">2</small></a></li>
+                    </ul>
+                    <div class="info">
+                        <p>Practica de Phonegap <br>Utilizando API.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="archivos">
+                <div class="toolbar">
+                    <h1>Archivos</h1>
+                    <a href="#" class="back">Atrás</a>
+                </div>
+                <div class="scroll">
+                	<ul class="individual">
+                        <li><a href="#" id="aEscribir">Escribir</a></li>
+                    </ul>
+                    <textarea id="aSend" style="margin:0; width:100%;height:70px;background:transparent;"></textarea>
+                    <ul class="individual">
+                        <li style="background-color:#0CF;"><a href="#" id="aLeer">Leer</a></li>
+                    </ul>
+                    <div id="aGet"></div>
+                </div>
+            </div>
+            <div id="contactos">
+                <div class="toolbar">
+                    <h1>Contactos</h1>
+                    <a class="back" href="#">Atrás</a>
+                </div>
+                <div class="scroll">
+                	<ul class="individual">
+                        <li><a href="#nc" class="slideup" id="cNuevo">Crear Nuevo</a></li>
+                        <li style="background:#0F6;"><a style="color:#fff;" href="#" id="cListar">Listar Todos</a></li>
+                    </ul>
+                    <ul class="plastic" id="cMostrar">
+                    	<li>Sin Leer Contactos</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="nc">
+                <div class="toolbar">
+                    <h1>Nuevo Contacto</h1>
+                    <a class="back" href="#">Cancelar</a>
+                </div>
+                <ul class="scroll plastic">
+                    <li><input type="text" id="ncNom" placeholder="Nombre" /></li>
+                    <li><input type="tel" id="ncTel" placeholder="Teléfono" /></li>
+                    <li><input type="email" id="ncMail" placeholder="Correo Electrónico" /></li>
+                    <li style="text-align:center;background:#0CF;"><a href="#" id="ncSend">Crear</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
