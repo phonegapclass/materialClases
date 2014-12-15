@@ -11,7 +11,7 @@ Temas por ver
 Practica de Hotel CENET
 --------------------------------------
 
-Desarrollaremos la interfaz gráfica para la apliación de un hotel que requiere que sus reservaciones sean realizadas desde el dispositivo móvil de sus usuarios. Las pantallas requeridas para esta aplicación serán:
+Desarrollaremos la interfaz gráfica para la aplicación de un hotel que requiere que sus reservaciones sean realizadas desde el dispositivo móvil de sus usuarios. Las pantallas requeridas para esta aplicación serán:
 
 1. Menú Principal (#home)
 2. Información de Privacidad (#priv)
